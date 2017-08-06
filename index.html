@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="main">
+<html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +17,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
   </head>
 
   <body>
@@ -31,14 +32,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/assets/files/JingyuanLi.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;&nbsp;Resume</a>
+          <span class="navbar-brand">Jingyuan Li</span>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#work">Experience</a></li>
-            <li><a href="#publications">Publications</a></li>
+            <li><a href="#" data-scroll="home">Home</a></li>
+            <li><a href="#projects" data-scroll="projects">Projects</a></li>
+            <li><a href="#exp" data-scroll="exp">Experience</a></li>
+            <li><a href="#publications" data-scroll="pub">Publications</a></li>
+            <li><a href="/assets/files/JingyuanLi.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;&nbsp;Resume</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -47,19 +49,60 @@
     <div class="container">
 
       <!-- Main component for a primary marketing message or call to action -->
-      <a class="anchor" id="home"></a>
+      <section id="home" data-anchor="home">
 
       <div class="about">
         <br>
-        <img src="assets/images/miami.jpg" height="390px" style="float:left; margin-right:20px">
-        <h2>Jingyuan Li</h2>
-        <p>I am a second-year <a href="http://www.ece.rutgers.edu/">Electrical and Computer Engineering</a>  graduate student at Rutgers, the State University of New Jersey. I work as a student assistant at Multimedia Image Processing Lab at Rutgers University under the supervision of Professor <a href="http://www.ece.rutgers.edu/~marsic/">Ivan Marsic</a>. Before joining Rutgers, I obtained my B.S. degree in Electronic Information Science and Engineering at <a href="http://www.xmu.edu.cn/en/">Xiamen University</a>.</p>
+        <img class="profile" src="assets/images/miami.jpg">
+        <h3>Jingyuan Li</h3>
+        <p>I am a second-year <a href="http://www.ece.rutgers.edu/">Electrical and Computer Engineering</a>  graduate student at Rutgers, the State University of New Jersey. I work as a student assistant at Multimedia Image Processing Lab at Rutgers University under the supervision of Professor <a href="http://www.ece.rutgers.edu/~marsic/">Ivan Marsic</a> and his Ph.D. student. Before joining Rutgers, I obtained my B.S. degree in Electronic Information Science and Engineering at <a href="http://www.xmu.edu.cn/en/">Xiamen University</a>.</p>
         <br>
-        <p>I am actively seeking Full-time positions as Software Development Engineer. My expected graduation time is June 2018.</p>
+        <p>I am actively seeking Full-time positions as <strong>Software Development Engineer</strong>. My expected graduation time is June 2018.</p>
         <p>Contact: &nbsp<a href="mailto:jingyuan.li@rutgers.edu"><i class="fa fa-envelope" aria-hidden="true"></i>&nbspjingyuan.li@rutgers.edu</a> | <a href="https://github.com/marlonli"><i class="fa fa-github" aria-hidden="true"></i></a> | <a href="https://www.linkedin.com/in/jingyuan-li-735952135/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></p>
       </div>
-
+      <br>
+      <section id="projects" data-anchor="projects">
+      <hr>
+      <div class="projects">
+        <h3>Projects</h3>
+        <div>
+          <p class="blank-para"></p>
+          <p>
+            <img class="thumbnail" src="assets/images/VIT-PLA2.0.jpeg" alt="VIT-PLA">
+            <span class="sub-title"><strong>VIT-PLA-Web: Visual Interactive Tool on Process Log Analysis</strong></span>
+            <span></span>
+          </p>
+        </div>
+        <div>
+          <p class="blank-para"></p>
+          <p>
+            <img class="thumbnail" src="assets/images/VIT-PLA2.0.jpeg" alt="VIT-PLA">
+            <span class="sub-title"><strong>VIT-PLA 1.0: Visual Interactive Tool on Process Log Analysis</strong></span>
+            <span></span>
+          </p>
+        </div>
+        <div>
+          <p class="blank-para"></p>
+          <p>
+            <img class="thumbnail" src="assets/images/StockPrediction.png" alt="StockPrediction">
+            <span class="sub-title"><a href="https://github.com/marlonli/StockPrediction"><strong>Stock Prediction</strong></a></span>
+            <span></span>
+          </p>
+        </div>
+        <div>
+          <p class="blank-para"></p>
+          <p>
+            <img class="thumbnail" src="assets/images/TrafficMonitoring.png" alt="VIT-PLA">
+            <span class="sub-title"><a href="https://github.com/marlonli/TrafficMonitoring"><strong>Traffic Monitoring System</strong></a></span>
+            <span></span>
+          </p>
+        </div>
+        <p class="blank-para"></p>
+        <hr>
+        
+      </div>
       <footer>
+        <small>Copyright &copy; 2017 Jingyuan Li</small>
       </footer>
 
     </div> <!-- /container -->

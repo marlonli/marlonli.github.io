@@ -8,10 +8,64 @@ body {
 	padding-top: 70px;
 }
 
-.container {
-	width: 900px;
+// .container {
+// 	width: 900px;
+// }
+
+.images {
+	float:left; 
+	margin-right:20px;
 }
 
-#rh-logo {
-	width: 50px;
+.shadow {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hover-shadow {
+	.shadow;
+	transition: all 0.3s ease;
+}
+
+.thumbnail:hover {
+	.thumbnail;
+ 	transform: translateY(-0.2em);
+}
+
+.thumbnail-link a:hover {
+	.thumbnail;
+ 	transform: translateY(-0.2em);
+}
+
+.profile {
+	.images;
+	.shadow;
+	height: 390px;
+	}
+
+.thumbnail {
+	.images;
+	.hover-shadow;
+	width: 250px;
+	border: none;
+}
+
+.thumbnail-link {
+	.thumbnail;
+	cursor: pointer;
+}
+
+.sub-title {
+	font-size: @font-size-large;
+}
+
+.blank-para {
+	clear: both;
+	padding: 1px;
+}
+
+footer {
+	text-align: center;
+    margin-bottom: 20px;
 }
