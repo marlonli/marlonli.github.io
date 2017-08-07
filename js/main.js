@@ -1,7 +1,7 @@
 $(document).ready(function(){
-
     $('nav a').on('click', function() {
         $('nav a').on('click', function(){ 
+
             if($('.navbar-toggle').css('display') !='none'){
                 $(".navbar-toggle").trigger( "click" );
             }
@@ -16,9 +16,9 @@ $(document).ready(function(){
 
     })
 
-
     $(window).scroll(function() {
         var windscroll = $(window).scrollTop();
+
         if (windscroll >= 1) {
             $('.container section').each(function(i) {
                 if ($(this).position().top <= windscroll - 20) {
@@ -28,12 +28,11 @@ $(document).ready(function(){
             });
 
         } else {
-
             $('nav').removeClass('fixed');
             $('nav li.active').removeClass('active');
             $('nav li:first').addClass('active');
         }
-
+        
     }).scroll();
 
 

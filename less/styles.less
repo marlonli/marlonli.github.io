@@ -4,17 +4,24 @@
 // @import "node_modules/bootswatch/paper/variables.less";
 @import "node_modules/bootswatch/paper/bootswatch.less";
 
+@media (min-width: 1200px) {
+    .container{
+        max-width: 900px;
+    }
+}
+
 body {
 	padding-top: 70px;
 }
 
-// .container {
-// 	width: 900px;
+// .text {
+// 	display: inline-block;
 // }
 
 .images {
 	float:left; 
 	margin-right:20px;
+	margin-bottom: 20px;
 }
 
 .shadow {
@@ -38,6 +45,10 @@ body {
  	transform: translateY(-0.2em);
 }
 
+.about p {
+	font-size: @font-size-profile;
+}
+
 .profile {
 	.images;
 	.shadow;
@@ -58,6 +69,21 @@ body {
 
 .sub-title {
 	font-size: @font-size-large;
+	margin-bottom: 0;
+	display: inline-block;
+	clear: right;
+}
+
+.stronger-text {
+	font-weight: 500;
+}
+
+.sub-body {
+	color: @gray;
+}
+
+.label {
+	font-size: @font-size-small;
 }
 
 .blank-para {
