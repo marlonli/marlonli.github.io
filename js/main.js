@@ -21,7 +21,7 @@ $(document).ready(function(){
 
         if (windscroll >= 1) {
             $('.container section').each(function(i) {
-                if ($(this).position().top <= windscroll - 20) {
+                if ($(this).position().top <= windscroll + 64) {
                     $('nav li.active').removeClass('active');
                     $('nav li').eq(i).addClass('active');
                 }
@@ -32,7 +32,7 @@ $(document).ready(function(){
             $('nav li.active').removeClass('active');
             $('nav li:first').addClass('active');
         }
-        
+
     }).scroll();
 
 

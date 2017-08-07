@@ -9830,6 +9830,11 @@ body {
   margin-right: 20px;
   margin-bottom: 20px;
 }
+.exp img {
+  height: 30px;
+  float: right;
+  margin-right: 10px;
+}
 .shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -9981,7 +9986,7 @@ a.thumbnail-link.active {
 .stronger-text {
   font-weight: 500;
 }
-.sub-body {
+.sub-content {
   color: #666;
 }
 .label {
@@ -9990,6 +9995,24 @@ a.thumbnail-link.active {
 .blank-para {
   clear: both;
   padding: 1px;
+}
+.table-img {
+  padding-bottom: 1px !important;
+}
+.table-borderless td {
+  border: none !important;
+}
+.table-time {
+  font-size: 16px;
+  padding-bottom: 1px !important;
+}
+.table-title {
+  font-size: 16px;
+  padding-bottom: 1px !important;
+  font-weight: 500;
+}
+.table-content {
+  padding-top: 0 !important;
 }
 footer {
   text-align: center;
