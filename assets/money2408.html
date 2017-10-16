@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html> 
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        a {
+            color: hotpink;
+        }
+    </style>
+    <body>
+        <h3>由于翔翔过于菜鸡，写了个网页算钱。水费去<a href="https://www.avalonaccess.com/UserProfile/LogOn">这里</a>付</h3>
+        <p>电费：<input type="text" id="elec"></p>
+        <p>网费：<input type="text" id="internet"></p>
+        <button type="button" id="cal" onclick="cal()">算钱</button>
+        <br>
+        <p id="result"></p>
+        <p id="result2"></p>
+
+    </body>
+    <script>
+        function cal() {
+            var elec = document.getElementById("elec").value;
+            var internet = document.getElementById("internet").value;
+            var resJXCC = elec / 2 + internet / 3;
+            var resXX = elec / 4+ internet / 3;
+            if (resJXCC == 0 || resXX == 0) {
+                document.getElementById("result").innerHTML = "你是觉得这个月可以不给钱还是咋滴";
+                document.getElementById("result2").innerHTML = "";
+            }
+            else {
+                if (isNaN(resJXCC) || isNaN(resXX)) {
+                    document.getElementById("result").innerHTML = "啥玩意？";
+                    document.getElementById("result2").innerHTML = "你是不是看不起我？";
+                }
+                else {
+                    document.getElementById("result").innerHTML = "翔翔要给我 " + resXX.toFixed(2);
+                    document.getElementById("result2").innerHTML = "加薪+翠西要给我 " + resJXCC.toFixed(2);
+                }
+                
+            }
+        }
+        
+    </script>
+</html>
