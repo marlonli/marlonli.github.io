@@ -28,6 +28,18 @@
                 document.getElementById("result").innerHTML = "你是觉得这个月可以不给钱还是咋滴";
                 document.getElementById("result2").innerHTML = "";
             }
+            else if (elec < 0 || internet < 0) {
+                document.getElementById("result").innerHTML = "你那么菜鸡吗，我倒贴你钱？";
+                document.getElementById("result2").innerHTML = "";
+            }
+            else if (elec <= 50) {
+                document.getElementById("result").innerHTML = "你确定咱们这个月就用了这点电？";
+                document.getElementById("result2").innerHTML = "";
+            }
+            else if (internet < 80) {
+                document.getElementById("result").innerHTML = "网费多少钱你当我不知道啊？";
+                document.getElementById("result2").innerHTML = "";
+            }
             else {
                 if (isNaN(resJXCC) || isNaN(resXX)) {
                     document.getElementById("result").innerHTML = "啥玩意？";
