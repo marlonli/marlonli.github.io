@@ -34,7 +34,7 @@ $(document).ready(function(){
 
         if (windscroll >= 1) {
             $('.container section').each(function(i) {
-                if ($(this).position().top <= windscroll + 64) {
+                if ($(this).position().top <= windscroll + 65) {
                     $('nav li.active').removeClass('active');
                     $('nav li').eq(i).addClass('active');
                 }
